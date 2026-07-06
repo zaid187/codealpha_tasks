@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Orders</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        🛍️ ShopSphere
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+
+    </div>
+
+</nav>
+
+<div class="orders-page">
+
+    <h1>📦 My Orders</h1>
+
+    <div class="orders-search">
+
+    <input
+        type="text"
+        id="searchOrders"
+        placeholder="Search orders..."
+    >
+
+</div>
+
+    <div class="orders-stats">
+
+        <div class="stat-card">
+
+            <h3 id="total-orders">0</h3>
+            <p>Total Orders</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3 id="total-spent">₹0</h3>
+            <p>Total Spent</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3 id="pending-orders">0</h3>
+            <p>Pending Orders</p>
+
+        </div>
+
+    </div>
+
+    <div id="orders-container"></div>
+
+</div>
+
+<div class="modal" id="orderModal">
+
+    <div class="modal-content">
+
+        <span
+        class="close-modal"
+        onclick="closeModal()">
+
+            ×
+
+        </span>
+
+        <h2>Order Details</h2>
+
+        <div id="modalBody"></div>
+
+    </div>
+
+</div>
+
+<script src="./js/orders.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Register - ShopSphere</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-card">
+
+        <div class="auth-logo">
+
+            🛍️ ShopSphere
+
+        </div>
+
+        <h2>Create Account</h2>
+
+        <p class="auth-subtitle">
+
+            Join ShopSphere and start shopping
+
+        </p>
+
+        <form id="registerForm">
+
+            <div class="input-group">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Full Name"
+                    required
+                >
+
+                <small
+                    class="error"
+                    id="nameError">
+                </small>
+
+            </div>
+
+            <div class="input-group">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required
+                >
+
+                <small
+                    class="error"
+                    id="emailError">
+                </small>
+
+            </div>
+
+            <div class="input-group">
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                    required
+                >
+
+                <small
+                    class="error"
+                    id="passwordError">
+                </small>
+
+            </div>
+
+            <button
+                type="submit"
+                class="auth-btn">
+
+                Create Account
+
+            </button>
+
+        </form>
+
+        <p class="auth-footer">
+
+            Already have an account?
+
+            <a href="login.html">
+
+                Login
+
+            </a>
+
+        </p>
+
+    </div>
+
+    <!-- Success Toast -->
+
+    <div
+        id="toast"
+        class="toast">
+
+        Account Created Successfully 🎉
+
+    </div>
+
+    <script src="./js/register.js"></script>
+
+</body>
+
+</html>

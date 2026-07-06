@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shopping Cart</title>
+
+<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        🛍️ ShopSphere
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="orders.html">Orders</a>
+    </div>
+
+</nav>
+
+<div class="cart-page">
+
+    <div class="cart-left">
+
+        <h1>
+            Shopping Cart
+        </h1>
+
+        <div id="cart-container">
+        </div>
+
+    </div>
+
+    <div class="cart-summary">
+
+        <h2>Order Summary</h2>
+
+        <div class="summary-row">
+            <span>Items</span>
+            <span id="items-count">0</span>
+        </div>
+
+        <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="subtotal">₹0</span>
+        </div>
+
+        <div class="summary-row">
+            <span>Delivery</span>
+            <span>FREE</span>
+        </div>
+
+        <hr>
+
+        <div class="summary-total">
+            <span>Total</span>
+            <span id="total">₹0</span>
+        </div>
+
+        <button id="placeOrderBtn">
+            Place Order
+        </button>
+
+    </div>
+
+</div>
+
+<script src="./js/cart.js"></script>
+
+</body>
+</html>
